@@ -1,1 +1,1 @@
-# Architecture Decisions {#section-design-decisions}
+# Architecture Decisions

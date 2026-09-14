@@ -1,5 +1,5 @@
-# Quality Requirements {#section-quality-scenarios}
+# Quality Requirements
 
-## Quality Requirements Overview {#_quality_requirements_overview}
+## Quality Requirements Overview
 
-## Quality Scenarios {#_quality_scenarios}
+## Quality Scenarios

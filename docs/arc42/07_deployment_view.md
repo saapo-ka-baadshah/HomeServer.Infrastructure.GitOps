@@ -1,33 +1,30 @@
-# Deployment View {#section-deployment-view}
+# Deployment View
 
-## Infrastructure Level 1 {#_infrastructure_level_1}
+## Infrastructure Level 1
 
 ***\<Overview Diagram\>***
 
-Motivation
+Motivation  
+*\<explanation in text form\>*
 
-:   *\<explanation in text form\>*
+Quality and/or Performance Features  
+*\<explanation in text form\>*
 
-Quality and/or Performance Features
+Mapping of Building Blocks to Infrastructure  
+*\<description of the mapping\>*
 
-:   *\<explanation in text form\>*
+## Infrastructure Level 2
 
-Mapping of Building Blocks to Infrastructure
-
-:   *\<description of the mapping\>*
-
-## Infrastructure Level 2 {#_infrastructure_level_2}
-
-### *\<Infrastructure Element 1\>* {#_infrastructure_element_1}
+### *\<Infrastructure Element 1\>*
 
 *\<diagram + explanation\>*
 
-### *\<Infrastructure Element 2\>* {#_infrastructure_element_2}
+### *\<Infrastructure Element 2\>*
 
 *\<diagram + explanation\>*
 
-...​
+…​
 
-### *\<Infrastructure Element n\>* {#_infrastructure_element_n}
+### *\<Infrastructure Element n\>*
 
 *\<diagram + explanation\>*

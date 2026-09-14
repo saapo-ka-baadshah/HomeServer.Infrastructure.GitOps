@@ -1,12 +1,12 @@
-# Context and Scope {#section-context-and-scope}
+# Context and Scope
 
-## Business Context {#_business_context}
+## Business Context
 
 **\<Diagram or Table\>**
 
 **\<optionally: Explanation of external domain interfaces\>**
 
-## Technical Context {#_technical_context}
+## Technical Context
 
 **\<Diagram or Table\>**
 
