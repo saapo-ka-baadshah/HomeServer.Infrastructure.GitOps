@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="bXcOVfW2IqAp5_cByRMO">
+    <mxGraphModel dx="975" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="800" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="kind" vertex="1">
+          <mxGeometry height="20" width="120" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-12" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="110" width="220" x="540" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-13" parent="vx_d4TohUcgRk4sDq2SC-12" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-14" parent="vx_d4TohUcgRk4sDq2SC-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="namespace: flux-system" vertex="1">
+          <mxGeometry height="20" width="125.71428571428571" x="15.714285714285714" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-22" parent="vx_d4TohUcgRk4sDq2SC-12" style="rounded=1;whiteSpace=wrap;html=1;" value="GitRepo:&lt;div&gt;flux-system&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="89.29" x="15.71" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-23" parent="vx_d4TohUcgRk4sDq2SC-12" style="rounded=1;whiteSpace=wrap;html=1;" value="Singular&lt;div&gt;Kustomize Ctrl:&lt;div&gt;flux-system&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="89.29" x="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="800" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="homeserver-cluster" vertex="1">
+          <mxGeometry height="20" width="120" x="20" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-26" connectable="0" parent="1" style="group;align=left;" value="" vertex="1">
+          <mxGeometry height="110" width="240" x="30" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-27" parent="vx_d4TohUcgRk4sDq2SC-26" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="240.00000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-28" parent="vx_d4TohUcgRk4sDq2SC-26" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="namespace: default" vertex="1">
+          <mxGeometry height="20" width="102.85714285714286" x="8.571428571428573" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-29" parent="vx_d4TohUcgRk4sDq2SC-26" style="rounded=1;whiteSpace=wrap;html=1;" value="homecluster-gateway" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-30" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="110" width="220" x="295" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-31" parent="vx_d4TohUcgRk4sDq2SC-30" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-32" parent="vx_d4TohUcgRk4sDq2SC-30" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="namespace: metallb-system" vertex="1">
+          <mxGeometry height="20" width="125.71428571428571" x="15.714285714285714" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-33" parent="vx_d4TohUcgRk4sDq2SC-30" style="rounded=1;whiteSpace=wrap;html=1;" value="IPAddressPool" vertex="1">
+          <mxGeometry height="60" width="89.29" x="15.71" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-34" parent="vx_d4TohUcgRk4sDq2SC-30" style="rounded=1;whiteSpace=wrap;html=1;" value="L2&lt;div&gt;Advertisement&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="89.29" x="119" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-35" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="110" width="220" x="540" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-36" parent="vx_d4TohUcgRk4sDq2SC-35" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-37" parent="vx_d4TohUcgRk4sDq2SC-35" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="namespace: flux-system" vertex="1">
+          <mxGeometry height="20" width="125.71428571428571" x="15.714285714285714" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-38" parent="vx_d4TohUcgRk4sDq2SC-35" style="rounded=1;whiteSpace=wrap;html=1;" value="GitRepo:&lt;div&gt;flux-system&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="89.29" x="15.71" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vx_d4TohUcgRk4sDq2SC-39" parent="vx_d4TohUcgRk4sDq2SC-35" style="rounded=1;whiteSpace=wrap;html=1;" value="Singular&lt;div&gt;Kustomize Ctrl:&lt;div&gt;flux-system&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="89.29" x="120" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
