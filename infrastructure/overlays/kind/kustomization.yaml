@@ -1,0 +1,23 @@
+# Removes some of the resources as a local development kind cluster
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../controllers
+patches:
+  - target:
+      kind: Gateway
+      name: homecluster-gateway
+    patch: |-
+      $patch: delete
+  - target:
+      kind: IPAddressPool 
+      name: default-pool
+    patch: |-
+      $patch: delete
+  - target:
+      kind: L2Advertisement 
+      name: default-l2
+    patch: |-
+      $patch: delete
+
