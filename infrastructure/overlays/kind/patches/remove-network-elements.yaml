@@ -1,0 +1,23 @@
+# Removes some of the resources as a local development kind cluster
+---
+# patches/remove-gateway.yaml
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: homecluster-gateway
+$patch: delete
+---
+# patches/remove-metallb.yaml
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: default-pool
+  namespace: metallb-system
+$patch: delete
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: default-l2
+  namespace: metallb-system
+$patch: delete
