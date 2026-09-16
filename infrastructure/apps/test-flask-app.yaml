@@ -17,3 +17,6 @@ spec:
   interval: 1m0s
   storageNamespace: application
   targetNamespace: application
+  values:
+    imagePullSecret:
+      -name: ghcr-auth
