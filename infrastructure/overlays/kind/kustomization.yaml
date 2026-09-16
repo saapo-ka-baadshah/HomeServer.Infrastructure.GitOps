@@ -8,16 +8,13 @@ patches:
   - target:
       kind: Gateway
       name: homecluster-gateway
-    patch: |-
-      $patch: delete
+    delete: true
   - target:
       kind: IPAddressPool 
       name: default-pool
-    patch: |-
-      $patch: delete
+    delete: true
   - target:
       kind: L2Advertisement 
       name: default-l2
-    patch: |-
-      $patch: delete
+    delete: true
 
