@@ -1,0 +1,9 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: home-infra-helm-repo
+  namespace: flux-system
+spec:
+  interval: 2h0m0s
+  url: https://saapo-ka-baadshah.github.io/HomeServer.Infrastructure.HelmCharts/
