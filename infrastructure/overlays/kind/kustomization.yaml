@@ -8,13 +8,28 @@ patches:
   - target:
       kind: Gateway
       name: homecluster-gateway
-    delete: true
+    patch: |-
+      apiVersion: gateway.networking.k8s.io/v1
+      kind: Gateway
+      metadata:
+        name: homecluster-gateway
+      $patch: delete
   - target:
       kind: IPAddressPool 
       name: default-pool
-    delete: true
+    patch: |-
+      apiVersion: metallb.io/v1beta1
+      kind: IPAddressPool
+      metadata:
+        name: default-pool
+      $patch: delete
   - target:
       kind: L2Advertisement 
       name: default-l2
-    delete: true
+    patch: |-
+      apiVersion: metallb.io/v1beta1
+      kind: IPAddressPool
+      metadata:
+        name: default-pool
+      $patch: delete
 
