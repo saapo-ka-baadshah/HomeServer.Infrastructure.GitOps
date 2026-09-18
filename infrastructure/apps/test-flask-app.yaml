@@ -19,4 +19,4 @@ spec:
   targetNamespace: application
   values:
     imagePullSecret:
-      -name: ghcr-auth
+      - name: ghcr-auth
