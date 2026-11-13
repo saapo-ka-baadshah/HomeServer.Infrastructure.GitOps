@@ -5,4 +5,7 @@ resources:
   - ../../controllers
   - ../../sources
   - ../../apps
+  - storage
+patches:
+  - path: vault-storage-patch.yaml
 

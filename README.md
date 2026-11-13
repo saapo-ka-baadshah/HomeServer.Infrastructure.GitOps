@@ -78,6 +78,10 @@ This repository is a **GitOps control repo** — it is not an application you ru
 
 **Note:** The SSH deploy key is required for Git access. Each cluster uses its own key stored as a Kubernetes Secret named `flux-system` in the `flux-system` namespace. See [ADR-002](docs/arc42/09_architecture_decisions.md#adr-002-use-ssh-deploy-keys-for-git-authentication) and [REQ-010](specs/REQUIREMENTS.md#req-010-authenticate-to-git-via-ssh-deploy-key) for details.
 
+### Persistent Storage
+
+The production `homeserver-cluster` installs Rancher's local-path provisioner and a `local-path` StorageClass for Vault. This dynamically provisions node-local storage under `/opt/local-path-provisioner`; volumes are not replicated or migrated if a node fails. The provisioner does not enforce PVC size limits, so monitor node disk usage and back up Vault data separately. The `kind` development cluster does not install this provisioner.
+
 ---
 
 ## References
