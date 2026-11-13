@@ -5,6 +5,29 @@ metadata:
   namespace: flux-system
 spec:
   values:
+    global:
+      tlsDisable: false
     server:
       dataStorage:
         storageClass: local-path
+      volumes:
+        - name: vault-tls
+          secret:
+            secretName: vault-server-tls
+      volumeMounts:
+        - name: vault-tls
+          mountPath: /vault/tls
+          readOnly: true
+      standalone:
+        config: |
+          ui = true
+          listener "tcp" {
+            tls_disable = 0
+            address = "[::]:8200"
+            cluster_address = "[::]:8201"
+            tls_cert_file = "/vault/tls/tls.crt"
+            tls_key_file = "/vault/tls/tls.key"
+          }
+          storage "file" {
+            path = "/vault/data"
+          }

@@ -1,0 +1,7 @@
+# Service accout for external-secrets to access vault secrets
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: eso-vault-auth
+  namespace: iam
