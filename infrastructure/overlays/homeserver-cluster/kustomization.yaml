@@ -6,6 +6,6 @@ resources:
   - ../../sources
   - ../../apps
   - storage
-# patches:
-#   - path: vault-storage-patch.yaml
+patches:
+  - path: vault-storage-patch.yaml
 
