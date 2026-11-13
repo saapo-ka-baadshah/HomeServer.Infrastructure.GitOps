@@ -5,3 +5,4 @@ resources:
 - helmrepo-imporwised.yaml
 - helmrepo-bitnami.yaml
 - helmrepo-hashicorp.yaml
+- helmrepo-external-secrets.yaml
