@@ -15,3 +15,12 @@ metadata:
   labels:
     shared-gateway-access: "true"
     application-service: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vault
+  labels:
+    shared-gateway-access: "true"
+    application-service: "true"
