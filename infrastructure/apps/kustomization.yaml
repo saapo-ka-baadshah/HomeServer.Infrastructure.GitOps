@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - freeipa-helm-release.yaml
 # Vault release
-- vault/hashicorp-vault-helm-release.yaml
+# - vault/hashicorp-vault-helm-release.yaml
