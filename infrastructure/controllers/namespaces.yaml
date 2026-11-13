@@ -24,3 +24,12 @@ metadata:
   labels:
     shared-gateway-access: "true"
     application-service: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: external-secrets
+  labels:
+    shared-gateway-access: "true"
+    application-service: "true"
