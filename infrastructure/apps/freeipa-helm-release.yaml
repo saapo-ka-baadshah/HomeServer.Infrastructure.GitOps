@@ -1,0 +1,19 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: freeipa-release
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: freeipa
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: imporwised-helm-repo
+        namespace: flux-system
+      version: 1.0.0
+  interval: 1m0s
+  storageNamespace: iam
+  targetNamespace: iam

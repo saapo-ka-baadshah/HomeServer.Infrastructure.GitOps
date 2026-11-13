@@ -6,3 +6,12 @@ metadata:
   labels:
     shared-gateway-access: "true"
     application-service: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iam
+  labels:
+    shared-gateway-access: "true"
+    application-service: "true"
