@@ -26,8 +26,9 @@ spec:
             tls_disable = 0
             address = "[::]:8200"
             cluster_address = "[::]:8201"
-            tls_cert_file = "/vault/tls/tls.crt"
-            tls_key_file = "/vault/tls/tls.key"
+            tls_cert_file = "/vault/tls/vault.crt"
+            tls_key_file = "/vault/tls/vault.key"
+            tls_client_ca_file = "/vault/tls/vault.ca"
           }
           storage "file" {
             path = "/vault/data"
