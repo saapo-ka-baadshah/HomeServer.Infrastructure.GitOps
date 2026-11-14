@@ -8,6 +8,10 @@ spec:
     global:
       tlsDisable: false
     server:
+      extraEnvironmentVars:
+        VAULT_CACERT: /vault/tls/vault.ca
+        VAULT_TLSCERT: /vault/tls/vault.crt
+        VAULT_TLSKEY: /vault/tls/vault.key
       dataStorage:
         storageClass: local-path
       volumes:
