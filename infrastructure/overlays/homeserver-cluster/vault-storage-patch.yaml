@@ -43,3 +43,8 @@ spec:
                     app.kubernetes.io/instance: vault-hashicorp-vault-release
                     component: webhook
                 topologyKey: kubernetes.io/hostname
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxSurge: 0
+          maxUnavailable: 1
