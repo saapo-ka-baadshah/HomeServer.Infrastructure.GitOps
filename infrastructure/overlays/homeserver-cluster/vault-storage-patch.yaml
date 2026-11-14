@@ -13,7 +13,8 @@ spec:
       volumes:
         - name: vault-tls
           secret:
-            secretName: vault-server-tls
+            defaultMode: 420
+            secretName: vault-ha-tls
       volumeMounts:
         - name: vault-tls
           mountPath: /vault/tls
