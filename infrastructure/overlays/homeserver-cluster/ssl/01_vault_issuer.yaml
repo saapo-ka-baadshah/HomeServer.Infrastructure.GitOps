@@ -1,0 +1,29 @@
+---
+# Certificate and Certificate Issuers for vault namespace
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: vault-selfsigned-ca
+  namespace: vault
+spec:
+  isCA: true
+  commonName: AmeyHomelab.VaultCA
+  secretName: vault-ca-secret
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+  issuerRef:
+    name: selfsigned-cluster-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io
+
+---
+# Create a namespace specific Issuer
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: vault-cert-issuer
+  namespace: vault
+spec:
+  ca:
+    secretName: vault-ca-secret
