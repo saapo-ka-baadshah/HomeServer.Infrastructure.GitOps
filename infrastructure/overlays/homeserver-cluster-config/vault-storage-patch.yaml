@@ -1,3 +1,24 @@
+---
+# Dedicated vault certificate
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: vault-certificate
+  namespace: vault
+spec:
+  isCA: false
+  commonName: AmeyHomelab.VaultCert
+  secretName: vault-cert-secret
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+  issuerRef:
+    name: vault-cert-issuer
+    kind: Issuer
+    group: cert-manager.io
+
+---
+# Hashicorp vault helm release
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
@@ -9,16 +30,16 @@ spec:
       tlsDisable: false
     server:
       extraEnvironmentVars:
-        VAULT_CACERT: /vault/tls/vault.ca
-        VAULT_TLSCERT: /vault/tls/vault.crt
-        VAULT_TLSKEY: /vault/tls/vault.key
+        VAULT_CACERT: /vault/tls/ca.crt
+        VAULT_TLSCERT: /vault/tls/tls.crt
+        VAULT_TLSKEY: /vault/tls/tls.key
       dataStorage:
         storageClass: local-path
       volumes:
         - name: vault-tls
           secret:
             defaultMode: 420
-            secretName: vault-ha-tls
+            secretName: vault-cert-secret
       volumeMounts:
         - name: vault-tls
           mountPath: /vault/tls
@@ -30,9 +51,9 @@ spec:
             tls_disable = 0
             address = "[::]:8200"
             cluster_address = "[::]:8201"
-            tls_cert_file = "/vault/tls/vault.crt"
-            tls_key_file = "/vault/tls/vault.key"
-            tls_client_ca_file = "/vault/tls/vault.ca"
+            tls_cert_file = "/vault/tls/tls.crt"
+            tls_key_file = "/vault/tls/tls.key"
+            tls_client_ca_file = "/vault/tls/ca.crt"
           }
           storage "file" {
             path = "/vault/data"
