@@ -3,11 +3,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../controllers
-  - ../../sources
-  - ../../apps
-  - storage
-  - ssl
-  - cert-manager-helm-release.yaml
-  - external-secrets-helm-release.yaml
-patches:
-  - path: vault-storage-patch.yaml
+#   - ../../sources
+#   - ../../apps
+#   - storage
+#   - ssl
+#   - cert-manager-helm-release.yaml
+#   - external-secrets-helm-release.yaml
+# patches:
+#   - path: vault-storage-patch.yaml
