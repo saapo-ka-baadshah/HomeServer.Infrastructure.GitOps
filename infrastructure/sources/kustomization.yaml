@@ -6,3 +6,4 @@ resources:
 - helmrepo-bitnami.yaml
 - helmrepo-hashicorp.yaml
 - helmrepo-external-secrets.yaml
+- helmrepo-jetstack.yaml

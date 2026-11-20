@@ -6,6 +6,7 @@ resources:
   - ../../sources
   - ../../apps
   - storage
+  - cert-manager-helm-release.yaml
   - external-secrets-helm-release.yaml
 patches:
   - path: vault-storage-patch.yaml
