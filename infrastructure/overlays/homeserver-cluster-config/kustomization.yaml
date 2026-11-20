@@ -1,0 +1,7 @@
+---
+# Kustomization for infrastructure level configurations.
+# NOTE: This should be dependent on the primary infrastructure CRDs.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - 
