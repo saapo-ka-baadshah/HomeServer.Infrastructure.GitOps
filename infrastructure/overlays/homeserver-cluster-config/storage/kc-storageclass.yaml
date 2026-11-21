@@ -1,0 +1,7 @@
+---
+# For keycloak volume
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: kc-local-path
+reclaimPolicy: Retain

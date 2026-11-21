@@ -2,8 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - https://github.com/rancher/local-path-provisioner//deploy?ref=v0.0.32
+  - kc-storageclass.yaml
+  - freeipa-storageclass.yaml
 patches:
-  - path: storageclasses.yaml
+  - path: local-path-patch.yaml
     target:
       group: storage.k8s.io
       version: v1
