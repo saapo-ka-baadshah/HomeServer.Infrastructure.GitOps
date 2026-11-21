@@ -9,3 +9,4 @@ resources:
   - ssl
 patches:
   - path: vault-storage-patch.yaml
+  - path: freeipa-storage-patch.yaml
