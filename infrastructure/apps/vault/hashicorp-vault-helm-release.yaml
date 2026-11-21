@@ -12,6 +12,7 @@ spec:
   dnsNames:
     - vault.vault.svc
     - vault.vault.svc.cluster.local
+    - vault.hcga.cluster
     - localhost
   ipAddresses:
     - 127.0.0.1
