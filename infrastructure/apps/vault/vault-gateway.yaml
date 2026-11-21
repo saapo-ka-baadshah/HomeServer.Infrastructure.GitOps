@@ -1,0 +1,22 @@
+---
+# Dedicated Gateway for the hashicorp vault
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: vault-gateway
+  namespace: vault
+spec:
+  gatewayClassName: cilium
+  listeners:
+    - name: vault-tls
+      protocol: TLS
+      port:  443
+      hostname: vault.hcga.cluster
+      tls:
+        mode: Passthrough
+      allowedRoutes:
+        kinds:
+          - kind: TLSRoute
+            group: gateway.networking.k8s.io
+        namespaces:
+          from: Same

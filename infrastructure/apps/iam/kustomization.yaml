@@ -1,0 +1,8 @@
+---
+# Kustomization for IAM
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - keycloak-helm-release.yaml
+  - freeipa-helm-release.yaml
+  
