@@ -6,3 +6,4 @@ resources:
   - ../../sources
   - cert-manager-helm-release.yaml
   - external-secrets-helm-release.yaml
+  - eso-vault-auth-sa.yaml
