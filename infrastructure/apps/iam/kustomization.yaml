@@ -6,4 +6,5 @@ resources:
 #   - keycloak-helm-release.yaml
   - freeipa-helm-release.yaml
   - external-secret-store.yaml
+  - external-secret-keycloak.yaml
   
